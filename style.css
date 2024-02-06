@@ -1245,7 +1245,7 @@ input:checked + .toggle-bg {
   background-color: #ffffff80;
 }
 .bg-welcome-jumbotron-alfasarana {
-  background-image: url(./images/jumbotron-t-shirts-alfasarana.jpg);
+  background-image: url(./images/jumbotron-t-shirts-alfasarana.webp);
 }
 .bg-cover {
   background-size: cover;

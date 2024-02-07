@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "welcome-jumbotron": "url('/images/jumbotron-t-shirts.webp')",
+        "welcome-jumbotron": "url('images/jumbotron-t-shirts.webp')",
         "welcome-jumbotron-alfasarana":
-            "url('./public/images/jumbotron-t-shirts-alfasarana.webp')",
+            "url('images/jumbotron-t-shirts-alfasarana.webp')",
       },
     }
   },

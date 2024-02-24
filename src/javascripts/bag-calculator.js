@@ -2,12 +2,11 @@ class BagCalculator{
     constructor(previousPriceTextElement, currentPriceTextElement) {
         this.previousPriceTextElement = previousPriceTextElement;
         this.currentPriceTextElement = currentPriceTextElement;
-        this.currentPrice = previousPriceTextElement;
         this.clear();
     }
 
     updatePrice() {
-        this.currentPriceTextElement.innerText = this.currentPrice;
+        this.currentPriceTextElement.innerText = `Total Harga ${new Intl.NumberFormat("id-ID", {style: "currency", currency: "IDR"}).format(this.currentPrice)}`;
     }
 
     clear() {

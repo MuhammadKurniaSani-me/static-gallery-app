@@ -1,6 +1,144 @@
-import {  } from "../../src/javascripts/";
+class BagCalculator{
+    constructor(previousPriceTextElement, currentPriceTextElement) {
+        this.previousPriceTextElement = previousPriceTextElement;
+        this.currentPriceTextElement = currentPriceTextElement;
+        this.currentPrice = previousPriceTextElement;
+        this.clear();
+    }
+
+    updatePrice() {
+        this.currentPriceTextElement.innerText = this.currentPrice;
+    }
+
+    clear() {
+        this.currentPrice = this.previousPriceTextElement;
+    }
+
+    addZipper(bagPrice) {
+        this.currentPrice += 2000;
+    }
+    
+    removeZipper(bagPrice) {
+        this.currentPrice -= 2000;
+    }
+    
+    addAdhesive() {
+        this.currentPrice += 250;
+    }
+
+    removeAdhesive(bagPrice) {
+        this.currentPrice -= 250;
+    }
+
+    add100gsmFabric() {
+        this.currentPrice += 2000;
+    }
+
+    remove100gsmFabri(bagPrice) {
+        this.currentPrice -= 2000;
+    }
+
+    addPlipitSewed() {
+        this.currentPrice += 2000;
+    }
+
+    removePlipitSewed(bagPrice) {
+        this.currentPrice -= 2000;
+    }
+}
+
+const priceOutput = document.querySelector("[data-price-output]");
+
+
 /**
+ * bag width
  *
+ */
+const incrementBagWidth = document.querySelector("#increment-bag-width-button");
+
+const decrementBagWidth = document.querySelector("#decrement-bag-width-button");
+
+// set the target element of the input field
+const $bagWidth = parseInt(document.getElementById("bag-width-input").value);
+
+
+/**
+ * bag length
+ *
+ */
+const incrementBagLength = document.querySelector("#increment-bag-length-button");
+
+const decrementBagLength = document.querySelector("#decrement-bag-length-button");
+
+const $bagLength = parseInt(document.getElementById("bag-length-input").value);
+
+
+/**
+ * bag height
+ *
+ */
+const incrementBagHeight = document.querySelector("#increment-bag-height-button");
+
+const decrementBagHeight = document.querySelector("#decrement-bag-height-button");
+
+// set the target element of the input field
+const $bagHeight = parseInt(document.getElementById("bag-height-input").value);
+
+
+/**
+ * bag color
+ *
+ */
+const incrementBagColor = document.querySelector("#increment-color-bag-button");
+
+const decrementBagColor = document.querySelector("#decrement-color-bag-button");
+
+// set the target element of the input field
+const $bagcolor = parseInt(document.getElementById("print-color-input").value);
+
+
+/**
+ * bag side
+ *
+ */
+const incrementBagSide = document.querySelector("#increment-side-bag-button");
+
+const decrementBagSide = document.querySelector("#decrement-side-bag-button");
+
+// set the target element of the input field
+const bagSide = parseInt(document.getElementById("bag-side-input").value);
+
+
+/**
+ * additional bag specs
+ *
+ */
+const useZipperEl = document.getElementById("add-zipper");
+
+const useAdhesiveEl = document.getElementById("add-adhesive");
+
+const use100gsmFabricEl = document.getElementById("add-100gsm-fabric");
+
+const usePlipitSewedEl = document.getElementById("add-plipit-sewed");
+
+
+// reset bag spec
+const resetBagSpecButton = document.getElementById("reset-bag-spec");
+
+
+// set the target element of the input field
+const bagColor = parseInt(document.getElementById("print-color-input").value);
+
+const numberButtons = document.querySelectorAll("[data-number]");
+const operationButtons = document.querySelectorAll("[data-operation]");
+const deleteButton = document.querySelector("[data-delete]");
+const allClearButton = document.querySelector("[data-all-clear]");
+const previousOperandTextElement = document.querySelector(
+    "[data-previous-operand]"
+);
+
+
+/**
  *
  *
  */
@@ -9,7 +147,7 @@ function sumVolume(length = 15, width = 15, height = 15) {
 }
 
 function minBagPrice() {
-    return 3300;
+    return 3500;
 }
 
 function addPlipitSewed() {
@@ -154,110 +292,49 @@ function calcBagPrice(
 // console.log(calcBagPrice(40,30,10,2,2,true,true,true,true))
 
 
-/**
- * Bag Width
- */
-// set the target element of the input field
-const $bagWidth = parseInt(document.getElementById("bag-width-input").value);
+const bagPrice = new BagCalculator(minBagPrice(), priceOutput);
 
-// optionally set the increment and decrement elements
-const $incrementBagWidth = document.getElementById("increment-bag-width-button");
-
-const $decrementBagWidth = document.getElementById("decrement-bag-width-button");
-
-
-/**
- * Bag Height
- */
-// set the target element of the input field
-const $bagHeight = parseInt(document.getElementById("bag-height-input").value);
-
-// optionally set the increment and decrement elements
-const $incrementBagHeight = document.getElementById("increment-bag-height-button");
-
-const $decrementBagHeight = document.getElementById("decrement-bag-height-button");
-
-
-/**
- * Bag length
- */
-// set the target element of the input field
-const $bagLength = parseInt(document.getElementById("bag-length-input").value);
-
-// optionally set the increment and decrement elements
-const $incrementBagLength = document.getElementById("increment-bag-length-button");
-
-const $decrementBagLength = document.getElementById("decrement-bag-length-button");
-
-
-/**
- * Side Bag
- */
-// set the target element of the input field
-const $sideBag = parseInt(document.getElementById("bag-side-input").value);
-
-// optionally set the increment and decrement elements
-const $incrementSideBag = document.getElementById("increment-bag-side-button");
-
-const $decrementSideBag = document.getElementById("decrement-bag-side-button");
-
-
-/**
- * Print Color-input
- */
-// set the target element of the input field
-const $colorBag = parseInt(document.getElementById("print-color-input").value);
-
-// optionally set the increment and decrement elements
-const $incrementColorBag = document.getElementById("increment-color-bag-button");
-
-const $decrementColorBag = document.getElementById("decrement-color-bag-button");
-
-
-// optional options with default values and callback functions
-// const options = {
-//     minValue: 1,
-//     maxValue: null, // infinite
-//     onIncrement: () => {
-//         console.log("input field value has been incremented");
-//     },
-//     onDecrement: () => {
-//         console.log("input field value has been decremented");
-//     },
-// };
-
-// const instanceOptions = {
-//     id: "counter-input-example",
-//     override: true,
-// };
-
-/*
- * $targetEl: required
- * $incrementEl: optional
- * $decrementEl: optional
- * options: optional
- */
-// const counterInput = new InputCounter(
-//     $bagWidth,
-//     $bagHeight,
-//     $bagLength,
-//     $sideBag,
-//     $colorBag,
-//     // options,
-//     // instanceOptions
-// );
-
-// // get the current value of the input field
-// counterInput.getCurrentValue();
-$incrementBagWidth.addEventListener("click", () => {
-    console.log($bagWidth+1);
-});
-$decrementBagWidth.addEventListener("click", () => {
-    console.log($bagWidth-1);
+useZipperEl.addEventListener("click", (button) => {
+    if (useZipperEl.checked) {
+        bagPrice.addZipper();
+        bagPrice.updatePrice();
+        return
+    } 
+    bagPrice.removeZipper();
+    bagPrice.updatePrice();
 });
 
-// // increment the value of the input field
-// counterInput.increment();
+useAdhesiveEl.addEventListener("click", (button) => {
+    if (useAdhesiveEl.checked) {
+        bagPrice.addAdhesive();
+        bagPrice.updatePrice();
+        return
+    } 
+    bagPrice.removeAdhesive();
+    bagPrice.updatePrice();
+});
 
-// // decrement the value of the input field
-// counterInput.decrement();
+usePlipitSewedEl.addEventListener("click", (button) => {
+    if (usePlipitSewedEl.checked) {
+        bagPrice.addPlipitSewed();
+        bagPrice.updatePrice();
+        return
+    } 
+    bagPrice.removePlipitSewed();
+    bagPrice.updatePrice();
+});
+
+use100gsmFabricEl.addEventListener("click", (button) => {
+    if (use100gsmFabricEl.checked) {
+        bagPrice.add100gsmFabric();
+        bagPrice.updatePrice();
+        return
+    } 
+    bagPrice.remove100gsmFabri();
+    bagPrice.updatePrice();
+});
+
+resetBagSpecButton.addEventListener("click", (button) => {
+    bagPrice.clear();
+    bagPrice.updatePrice();
+})

@@ -1,892 +1,835 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Alfasarana | Beranda</title>
-		<script defer src="./public/app.js"></script>
-		<script
-			defer
-			src="./node_modules/flowbite/dist/flowbite.min.js"
-		></script>
-		<link rel="stylesheet" href="./public/output-style.css" />
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Alfasarana | Beranda</title>
+    <script defer src="./public/app.js"></script>
+    <script defer src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="./public/output-style.css" />
+  </head>
 
-	<body class="overflow-y-scroll bg-pink-50 dark:bg-gray-900">
-		<!-- Navigation -->
+  <body class="overflow-y-scroll bg-pink-50 dark:bg-gray-900">
+    <!-- Navigation -->
 
-		<nav class="bg-pink-100 border-gray-200 dark:bg-pink-600 fixed w-full">
-			<div
-				class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-			>
-				<a
-					href="./index.html"
-					class="flex items-center space-x-2 rtl:space-x-reverse"
-				>
-					<img
-						src="./public/images/website-logo-kaos.webp"
-						class="h-8 me-1"
-						alt="FlowBite Logo"
-					/>
-					<img
-						src="./public/images/website-logo-tas.webp"
-						class="h-8 me-1"
-						alt="FlowBite Logo"
-					/>
-					<span
-						class="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap dark:text-gray-900"
-						>Focus Alfasarana</span
-					>
-				</a>
-				<button
-					data-collapse-toggle="navbar-default"
-					type="button"
-					class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-200 dark:text-gray-900 dark:hover:bg-pink-800 dark:focus:ring-gray-600"
-					aria-controls="navbar-default"
-					aria-expanded="false"
-				>
-					<span class="sr-only">Open main menu</span>
-					<svg
-						class="w-5 h-5"
-						aria-hidden="true"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 17 14"
-					>
-						<path
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M1 1h15M1 7h15M1 13h15"
-						/>
-					</svg>
-				</button>
-				<div
-					class="hidden w-full md:block md:w-auto"
-					id="navbar-default"
-				>
-					<ul
-						class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-pink-50 rounded-lg bg-pink-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-pink-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-					>
-						<li>
-							<a
-								href="./index.html"
-								class="block py-2 px-3 text-pink-50 bg-pink-600 rounded md:bg-transparent md:text-pink-700 md:p-0 dark:text-pink-50 md:dark:text-pink-500"
-								aria-current="page"
-								>Beranda</a
-							>
-						</li>
-						<li>
-							<a
-								href="./public/gallery/t-shirts.html"
-								class="block py-2 px-3 text-gray-900 rounded hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-pink-50 md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-pink-50 md:dark:hover:bg-transparent"
-								>Kaos</a
-							>
-						</li>
-						<li>
-							<a
-								href="./public/gallery/bags.html"
-								class="block py-2 px-3 text-gray-900 rounded hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-pink-50 md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-pink-50 md:dark:hover:bg-transparent"
-								>Tas</a
-							>
-						</li>
-						<li>
-							<a
-								href="./public/gallery/dtf.html"
-								class="block py-2 px-3 text-gray-900 rounded hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-pink-50 md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-pink-50 md:dark:hover:bg-transparent"
-								>Print DTF</a
-							>
-						</li>
-						<li>
-							<a
-								href="./public/blogs/main-blog.html"
-								class="block py-2 px-3 text-gray-900 rounded hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-pink-50 md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-pink-50 md:dark:hover:bg-transparent"
-								>Blog</a
-							>
-						</li>
-						<li>
-							<a
-								href="#contact-us"
-								class="block py-2 px-3 text-gray-900 rounded hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-pink-50 md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-pink-50 md:dark:hover:bg-transparent"
-								>Kontak</a
-							>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+    <nav class="bg-pink-100 border-gray-200 dark:bg-pink-600 fixed w-full">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="./index.html"
+          class="flex items-center space-x-2 rtl:space-x-reverse"
+        >
+          <img
+            src="./public/images/website-logo-kaos.webp"
+            class="h-8 me-1"
+            alt="FlowBite Logo"
+          />
+          <img
+            src="./public/images/website-logo-tas.webp"
+            class="h-8 me-1"
+            alt="FlowBite Logo"
+          />
+          <span
+            class="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap dark:text-gray-900"
+            >Focus Alfasarana</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-200 dark:text-gray-900 dark:hover:bg-pink-800 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-pink-50 rounded-lg bg-pink-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-pink-50 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="block py-2 px-3 text-pink-50 bg-pink-600 rounded md:bg-transparent md:text-pink-700 md:p-0 dark:text-pink-50 md:dark:text-pink-500"
+                aria-current="page"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="./public/gallery/t-shirts.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-pink-50 md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-pink-50 md:dark:hover:bg-transparent"
+                >Kaos</a
+              >
+            </li>
+            <li>
+              <a
+                href="./public/gallery/bags.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-pink-50 md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-pink-50 md:dark:hover:bg-transparent"
+                >Tas</a
+              >
+            </li>
+            <li>
+              <a
+                href="./public/gallery/dtf.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-pink-50 md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-pink-50 md:dark:hover:bg-transparent"
+                >Print DTF</a
+              >
+            </li>
+            <li>
+              <a
+                href="./public/blogs/main-blog.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-pink-50 md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-pink-50 md:dark:hover:bg-transparent"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact-us"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-pink-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-pink-50 md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-pink-50 md:dark:hover:bg-transparent"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-		<!-- Main -->
-		<main class="space-y-10">
-			<!-- Content -->
-			<section
-				id="welcome"
-				class="bg-center bg-no-repeat bg-cover bg-welcome-jumbotron-alfasarana bg-gray-700 bg-blend-multiply sm:bg-gray-700"
-			>
-				<div
-					class="px-4 mx-auto max-w-screen-xl text-center pt-32 py-24 lg:py-56"
-				>
-					<h1
-						class="mt-8 mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
-					>
-						PRODUSEN KAOS & TAS SURABAYA
-					</h1>
-					<p
-						class="mb-2 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
-					>
-						Focus Alfasarana Produsen Kaos Surabaya memproduksi Kaos
-						T-Shirt dan Polo Shirt dengan berbabagai macam jenis
-						bahan, sesuai dengan design yang diinginkan customer.
-						Kami juga memproduksi T-Shirt polos untuk keperluan
-						sablon.
-					</p>
-				</div>
-			</section>
+    <!-- Main -->
+    <main class="space-y-10">
+      <!-- Content -->
+      <section
+        id="welcome"
+        class="bg-center bg-no-repeat bg-cover bg-welcome-jumbotron-alfasarana bg-gray-700 bg-blend-multiply sm:bg-gray-700"
+      >
+        <div
+          class="px-4 mx-auto max-w-screen-xl text-center pt-32 py-24 lg:py-56"
+        >
+          <h1
+            class="mt-8 mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+          >
+            PRODUSEN KAOS & TAS SURABAYA
+          </h1>
+          <p
+            class="mb-2 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+          >
+            Focus Alfasarana Produsen Kaos Surabaya memproduksi Kaos T-Shirt dan
+            Polo Shirt dengan berbabagai macam jenis bahan, sesuai dengan design
+            yang diinginkan customer. Kami juga memproduksi T-Shirt polos untuk
+            keperluan sablon.
+          </p>
+        </div>
+      </section>
 
-			<!-- Product Us -->
-			<section id="product-us" class="pt-20 dark:bg-gray-900">
-				<div class="py-2 px-4 mx-auto text-center lg:py-4">
-					<h2
-						class="mb-8 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-white uppercase"
-					>
-						Produk kami
-					</h2>
+      <!-- Product Us -->
+      <section id="product-us" class="pt-20 dark:bg-gray-900">
+        <div class="py-2 px-4 mx-auto text-center lg:py-4">
+          <h2
+            class="mb-8 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-white uppercase"
+          >
+            Produk kami
+          </h2>
 
-					<div class="pb-4 mx-auto text-center space-y-10 lg:py-8">
-						<div
-							class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-						>
-							<a href="./public/gallery/bags.html">
-								<img
-									class="rounded-t-lg"
-									src="./public/images/bags/spunbonds/tas-10.jpg"
-									alt=""
-								/>
-							</a>
-							<div class="p-5">
-								<a href="./public/gallery/bags.html">
-									<h5
-										class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-									>
-										Custom Tas
-									</h5>
-								</a>
+          <div class="pb-4 mx-auto text-center space-y-10 lg:py-8">
+            <div
+              class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <a href="./public/gallery/bags.html">
+                <img
+                  class="rounded-t-lg"
+                  src="./public/images/bags/spunbonds/tas-10.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="./public/gallery/bags.html">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Custom Tas
+                  </h5>
+                </a>
 
-								<p
-									class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-								>
-									Kami adalah salah satu pencetus produsen
-									kustom tas di Surabaya. Kami memproduksi tas
-									spunbond, mika, blacu, kanvas, kain goni,
-									hampers dan kustom tas belanja. Kami juga
-									menyediakan jasa sablon & print DTF pada
-									tas.
-								</p>
-								<a
-									href="./public/gallery/bags.html"
-									class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
-								>
-									Lihat galeri
-									<svg
-										class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 14 10"
-									>
-										<path
-											stroke="currentColor"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M1 5h12m0 0L9 1m4 4L9 9"
-										/>
-									</svg>
-								</a>
-								<a
-									href="tasspunbond.com"
-									class="inline-flex items-center ml-2 px-3 py-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
-								>
-									Telusuri lebih
-									<svg
-										class="w-3.5 h-3.5 ms-2"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-									>
-										<path
-											stroke="currentColor"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M18 14v4.8a1.2 1.2 0 0 1-1.2 1.2H5.2A1.2 1.2 0 0 1 4 18.8V7.2A1.2 1.2 0 0 1 5.2 6h4.6m4.4-2H20v5.8m-7.9 2L20 4.2"
-										/>
-									</svg>
-								</a>
-							</div>
-						</div>
-						<div
-							class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-						>
-							<a href="./public/gallery/t-shirts.html">
-								<img
-									class="rounded-t-lg"
-									src="./public/images/shirts/abu-abu-muda.webp"
-									alt=""
-								/>
-							</a>
-							<div class="p-5">
-								<a href="./public/gallery/t-shirts.html">
-									<h5
-										class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-									>
-										Custom Kaos
-									</h5>
-								</a>
-								<p
-									class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-								>
-									Kami adalah salah satu produsen kaos di
-									Surabaya. Kami memproduksi kaos polos Cotton
-									Combed 30S & 24S, Polo, Salur. Kami juga
-									menyediakan jasa sablon & print DTF pada
-									kaos.
-								</p>
-								<a
-									href="./public/gallery/t-shirts.html"
-									class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
-								>
-									Lihat galeri
-									<svg
-										class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 14 10"
-									>
-										<path
-											stroke="currentColor"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M1 5h12m0 0L9 1m4 4L9 9"
-										/>
-									</svg>
-								</a>
-                                <a
-									href="produsenkaos.com"
-									class="inline-flex items-center my-2 ml-2 px-3 py-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
-								>
-									Telusuri lebih
-									<svg
-										class="w-3.5 h-3.5 ms-2"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-									>
-										<path
-											stroke="currentColor"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M18 14v4.8a1.2 1.2 0 0 1-1.2 1.2H5.2A1.2 1.2 0 0 1 4 18.8V7.2A1.2 1.2 0 0 1 5.2 6h4.6m4.4-2H20v5.8m-7.9 2L20 4.2"
-										/>
-									</svg>
-								</a>
-							</div>
-						</div>
-						<div
-							class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-						>
-							<a href="./public/gallery/dtf.html">
-								<img
-									class="rounded-t-lg"
-									src="./public/images/printed-DTF.webp"
-									alt=""
-								/>
-							</a>
-							<div class="p-5">
-								<a href="./public/gallery/dtf.html">
-									<h5
-										class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-									>
-										Print DTF
-									</h5>
-								</a>
-								<p
-									class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-								>
-									Kami menawarkan jasa cetak (Direct Transfer
-									Film) DTF untuk kaos maupun cetak meteran.
-									Kami juga menawarkan cetak DTF warna Gold.
-								</p>
-								<a
-									href="./public/gallery/dtf.html"
-									class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
-								>
-									Lihat galeri
-									<svg
-										class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-										aria-hidden="true"
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 14 10"
-									>
-										<path
-											stroke="currentColor"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M1 5h12m0 0L9 1m4 4L9 9"
-										/>
-									</svg>
-								</a>
-							</div>
-						</div>
-                        <div
-							class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-						>
-							<a href="./public/gallery/dtf.html">
-								<img
-									class="rounded-t-lg"
-									src="./public/images/undraw_Social_dashboard.png"
-									alt=""
-								/>
-							</a>
-							<div class="p-5">
-								<a href="">
-									<h5
-										class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-									>
-										Sosial Media Kami
-									</h5>
-								</a>
-								<p
-									class="mb-3 font-normal text-gray-700 dark:text-gray-400"
-								>
-									Yuk cek sosial media kami untuk cari referensi kaos & tas kesukaan kamu ya
-								</p>
-                                <a
-									href="https://youtube.com/@focustasspunbond19?si=wLm_O16yPF2At5HN"
-									class="inline-flex items-center my-2 px-3 py-2 pb-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
-								>
-									Cek
-                                    <svg class="w-3.5 h-5 ms-2 bi bi-youtube" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-                                      </svg>
-								</a>
-								<a
-									href="https://www.instagram.com/goodiebag_sby?igsh=ODZxcmtrMnk1NTdk"
-									class="inline-flex items-center px-3 py-2 pb-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
-								>
-									Tas
-                                    <svg class="w-3.5 h-5 ms-2 bi bi-instagram" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                                      </svg>
-								</a>
-                                <a
-									href="https://www.instagram.com/produsenkaos.sby?igsh=MWhxZWRtbGk1NDc2eg=="
-									class="inline-flex items-center my-2 px-3 py-2 pb-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
-								>
-									Kaos
-                                    <svg class="w-3.5 h-5 ms-2 bi bi-instagram" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                                      </svg>
-								</a>
-                                <a
-									href="https://www.tiktok.com/@spunbondsurabayabag?is_from_webapp=1&sender_device=pc"
-									class="inline-flex items-center my-2 px-3 py-2 pb-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
-								>
-									Cek
-                                    <svg class="w-3.5 h-5 ms-2 bi bi-tiktok" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-                                    </svg>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Kami adalah salah satu pencetus produsen kustom tas di
+                  Surabaya. Kami memproduksi tas spunbond, mika, blacu, kanvas,
+                  kain goni, hampers dan kustom tas belanja. Kami juga
+                  menyediakan jasa sablon & print DTF pada tas.
+                </p>
+                <a
+                  href="./public/gallery/bags.html"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
+                >
+                  Lihat galeri
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="tasspunbond.com"
+                  class="inline-flex items-center ml-2 px-3 py-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
+                >
+                  Telusuri lebih
+                  <svg
+                    class="w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M18 14v4.8a1.2 1.2 0 0 1-1.2 1.2H5.2A1.2 1.2 0 0 1 4 18.8V7.2A1.2 1.2 0 0 1 5.2 6h4.6m4.4-2H20v5.8m-7.9 2L20 4.2"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div
+              class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <a href="./public/gallery/t-shirts.html">
+                <img
+                  class="rounded-t-lg"
+                  src="./public/images/shirts/abu-abu-muda.webp"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="./public/gallery/t-shirts.html">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Custom Kaos
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Kami adalah salah satu produsen kaos di Surabaya. Kami
+                  memproduksi kaos polos Cotton Combed 30S & 24S, Polo, Salur.
+                  Kami juga menyediakan jasa sablon & print DTF pada kaos.
+                </p>
+                <a
+                  href="./public/gallery/t-shirts.html"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
+                >
+                  Lihat galeri
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="produsenkaos.com"
+                  class="inline-flex items-center my-2 ml-2 px-3 py-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
+                >
+                  Telusuri lebih
+                  <svg
+                    class="w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M18 14v4.8a1.2 1.2 0 0 1-1.2 1.2H5.2A1.2 1.2 0 0 1 4 18.8V7.2A1.2 1.2 0 0 1 5.2 6h4.6m4.4-2H20v5.8m-7.9 2L20 4.2"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div
+              class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <a href="./public/gallery/dtf.html">
+                <img
+                  class="rounded-t-lg"
+                  src="./public/images/printed-DTF.webp"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="./public/gallery/dtf.html">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Print DTF
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Kami menawarkan jasa cetak (Direct Transfer Film) DTF untuk
+                  kaos maupun cetak meteran. Kami juga menawarkan cetak DTF
+                  warna Gold.
+                </p>
+                <a
+                  href="./public/gallery/dtf.html"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
+                >
+                  Lihat galeri
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div
+              class="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
+              <a href="./public/gallery/dtf.html">
+                <img
+                  class="rounded-t-lg"
+                  src="./public/images/undraw_Social_dashboard.png"
+                  alt=""
+                />
+              </a>
+              <div class="p-5">
+                <a href="">
+                  <h5
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    Sosial Media Kami
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  Yuk cek sosial media kami untuk cari referensi kaos & tas
+                  kesukaan kamu ya
+                </p>
+                <a
+                  href="https://youtube.com/@focustasspunbond19?si=wLm_O16yPF2At5HN"
+                  class="inline-flex items-center my-2 px-3 py-2 pb-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
+                >
+                  Cek
+                  <svg
+                    class="w-3.5 h-5 ms-2 bi bi-youtube"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.instagram.com/goodiebag_sby?igsh=ODZxcmtrMnk1NTdk"
+                  class="inline-flex items-center px-3 py-2 pb-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
+                >
+                  Tas
+                  <svg
+                    class="w-3.5 h-5 ms-2 bi bi-instagram"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.instagram.com/produsenkaos.sby?igsh=MWhxZWRtbGk1NDc2eg=="
+                  class="inline-flex items-center my-2 px-3 py-2 pb-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
+                >
+                  Kaos
+                  <svg
+                    class="w-3.5 h-5 ms-2 bi bi-instagram"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@spunbondsurabayabag?is_from_webapp=1&sender_device=pc"
+                  class="inline-flex items-center my-2 px-3 py-2 pb-2 text-sm font-medium text-center text-white bg-pink-700 rounded-lg hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 dark:bg-pink-600 dark:hover:bg-pink-800 dark:focus:ring-pink-800"
+                >
+                  Cek
+                  <svg
+                    class="w-3.5 h-5 ms-2 bi bi-tiktok"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<section class="dark:bg-gray-900">
-				<div
-					class="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-4"
-				>
-					<p
-						class="mb-2 text-base font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400 uppercase"
-					>
-						Kunjungi kami langsung di
-					</p>
-					<h2
-						class="mb-2 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-white uppercase"
-					>
-						Toko kami
-					</h2>
+      <section class="dark:bg-gray-900">
+        <div class="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-4">
+          <p
+            class="mb-2 text-base font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400 uppercase"
+          >
+            Kunjungi kami langsung di
+          </p>
+          <h2
+            class="mb-2 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-white uppercase"
+          >
+            Toko kami
+          </h2>
 
-					<div
-						class="pb-4 px-4 mx-auto max-w-screen-xl text-center lg:py-8"
-					>
-						<div
-							class="flex items-center justify-center h-96 my-6 rounded bg-gray-50 dark:bg-gray-800"
-						>
-							<iframe
-								class="w-full h-full"
-								src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3856.9140817946327!2d112.78185423499214!3d-7.330155590058073!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7facfc197b455%3A0xe727cb16c6667a4a!2sAlfasarana%20Produsen%20Tas%20Kain%20%7C%20Goodiebag%20%7C%20Goody%20bag%20%7C%20Tas%20Spunbond%20%7C%20Tas%20Kemasan!5e0!3m2!1sid!2sid!4v1706174368270!5m2!1sid!2sid"
-								frameborder="0"
-								style="border: 0"
-								allowfullscreen=""
-								aria-hidden="false"
-								tabindex="0"
-							>
-							</iframe>
-						</div>
-					</div>
-				</div>
-			</section>
+          <div class="pb-4 px-4 mx-auto max-w-screen-xl text-center lg:py-8">
+            <div
+              class="flex items-center justify-center h-96 my-6 rounded bg-gray-50 dark:bg-gray-800"
+            >
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3856.9140817946327!2d112.78185423499214!3d-7.330155590058073!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7facfc197b455%3A0xe727cb16c6667a4a!2sAlfasarana%20Produsen%20Tas%20Kain%20%7C%20Goodiebag%20%7C%20Goody%20bag%20%7C%20Tas%20Spunbond%20%7C%20Tas%20Kemasan!5e0!3m2!1sid!2sid!4v1706174368270!5m2!1sid!2sid"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- About Us -->
-			<section id="about-us" class="pt-20 dark:bg-gray-900">
-				<div
-					class="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-4"
-				>
-					<p
-						class="mb-2 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400 uppercase"
-					>
-						Mengapa harus bersama
-					</p>
-					<h2
-						class="mb-3 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-white uppercase"
-					>
-						Alfasarana
-					</h2>
+      <!-- About Us -->
+      <section id="about-us" class="pt-20 dark:bg-gray-900">
+        <div class="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-4">
+          <p
+            class="mb-2 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400 uppercase"
+          >
+            Mengapa harus bersama
+          </p>
+          <h2
+            class="mb-3 text-3xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-white uppercase"
+          >
+            Alfasarana
+          </h2>
 
-					<div
-						class="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-8"
-					>
-						<ul
-							class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 text-left text-gray-500 dark:text-gray-400"
-						>
-							<li
-								class="flex flex-col items-center space-x-3 px-4 py-2 text-center rtl:space-x-reverse"
-							>
-								<svg
-									class="w-10 h-10 mb-2 text-green-500 dark:text-pink-600"
-									aria-hidden="true"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M12 2a3 3 0 0 0-2.1.9l-.9.9a1 1 0 0 1-.7.3H7a3 3 0 0 0-3 3v1.2c0 .3 0 .5-.2.7l-1 .9a3 3 0 0 0 0 4.2l1 .9c.2.2.3.4.3.7V17a3 3 0 0 0 3 3h1.2c.3 0 .5 0 .7.2l.9 1a3 3 0 0 0 4.2 0l.9-1c.2-.2.4-.3.7-.3H17a3 3 0 0 0 3-3v-1.2c0-.3 0-.5.2-.7l1-.9a3 3 0 0 0 0-4.2l-1-.9a1 1 0 0 1-.3-.7V7a3 3 0 0 0-3-3h-1.2a1 1 0 0 1-.7-.2l-.9-1A3 3 0 0 0 12 2Zm3.7 7.7a1 1 0 1 0-1.4-1.4L10 12.6l-1.3-1.3a1 1 0 0 0-1.4 1.4l2 2c.4.4 1 .4 1.4 0l5-5Z"
-										clip-rule="evenodd"
-									/>
-								</svg>
+          <div class="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-8">
+            <ul
+              class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 text-left text-gray-500 dark:text-gray-400"
+            >
+              <li
+                class="flex flex-col items-center space-x-3 px-4 py-2 text-center rtl:space-x-reverse"
+              >
+                <svg
+                  class="w-10 h-10 mb-2 text-green-500 dark:text-pink-600"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2a3 3 0 0 0-2.1.9l-.9.9a1 1 0 0 1-.7.3H7a3 3 0 0 0-3 3v1.2c0 .3 0 .5-.2.7l-1 .9a3 3 0 0 0 0 4.2l1 .9c.2.2.3.4.3.7V17a3 3 0 0 0 3 3h1.2c.3 0 .5 0 .7.2l.9 1a3 3 0 0 0 4.2 0l.9-1c.2-.2.4-.3.7-.3H17a3 3 0 0 0 3-3v-1.2c0-.3 0-.5.2-.7l1-.9a3 3 0 0 0 0-4.2l-1-.9a1 1 0 0 1-.3-.7V7a3 3 0 0 0-3-3h-1.2a1 1 0 0 1-.7-.2l-.9-1A3 3 0 0 0 12 2Zm3.7 7.7a1 1 0 1 0-1.4-1.4L10 12.6l-1.3-1.3a1 1 0 0 0-1.4 1.4l2 2c.4.4 1 .4 1.4 0l5-5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
 
-								<span
-									>Melayani pesanan partai (massal) maupun
-									indi (satuan).</span
-								>
-							</li>
-							<li
-								class="flex flex-col items-center space-x-3 px-4 py-2 text-center rtl:space-x-reverse"
-							>
-								<svg
-									class="w-10 h-10 mb-2 text-green-500 dark:text-pink-600"
-									aria-hidden="true"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M12 2a3 3 0 0 0-2.1.9l-.9.9a1 1 0 0 1-.7.3H7a3 3 0 0 0-3 3v1.2c0 .3 0 .5-.2.7l-1 .9a3 3 0 0 0 0 4.2l1 .9c.2.2.3.4.3.7V17a3 3 0 0 0 3 3h1.2c.3 0 .5 0 .7.2l.9 1a3 3 0 0 0 4.2 0l.9-1c.2-.2.4-.3.7-.3H17a3 3 0 0 0 3-3v-1.2c0-.3 0-.5.2-.7l1-.9a3 3 0 0 0 0-4.2l-1-.9a1 1 0 0 1-.3-.7V7a3 3 0 0 0-3-3h-1.2a1 1 0 0 1-.7-.2l-.9-1A3 3 0 0 0 12 2Zm3.7 7.7a1 1 0 1 0-1.4-1.4L10 12.6l-1.3-1.3a1 1 0 0 0-1.4 1.4l2 2c.4.4 1 .4 1.4 0l5-5Z"
-										clip-rule="evenodd"
-									/>
-								</svg>
+                <span
+                  >Melayani pesanan partai (massal) maupun indi (satuan).</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center space-x-3 px-4 py-2 text-center rtl:space-x-reverse"
+              >
+                <svg
+                  class="w-10 h-10 mb-2 text-green-500 dark:text-pink-600"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2a3 3 0 0 0-2.1.9l-.9.9a1 1 0 0 1-.7.3H7a3 3 0 0 0-3 3v1.2c0 .3 0 .5-.2.7l-1 .9a3 3 0 0 0 0 4.2l1 .9c.2.2.3.4.3.7V17a3 3 0 0 0 3 3h1.2c.3 0 .5 0 .7.2l.9 1a3 3 0 0 0 4.2 0l.9-1c.2-.2.4-.3.7-.3H17a3 3 0 0 0 3-3v-1.2c0-.3 0-.5.2-.7l1-.9a3 3 0 0 0 0-4.2l-1-.9a1 1 0 0 1-.3-.7V7a3 3 0 0 0-3-3h-1.2a1 1 0 0 1-.7-.2l-.9-1A3 3 0 0 0 12 2Zm3.7 7.7a1 1 0 1 0-1.4-1.4L10 12.6l-1.3-1.3a1 1 0 0 0-1.4 1.4l2 2c.4.4 1 .4 1.4 0l5-5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
 
-								<span
-									>Berpengalaman lama dibidang konveksi kaos
-									didukung Tenaga dan SDM yang handal.</span
-								>
-							</li>
-							<li
-								class="flex flex-col items-center space-x-3 px-4 py-2 text-center rtl:space-x-reverse"
-							>
-								<svg
-									class="w-10 h-10 mb-2 text-green-500 dark:text-pink-600"
-									aria-hidden="true"
-									xmlns="http://www.w3.org/2000/svg"
-									fill="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M12 2a3 3 0 0 0-2.1.9l-.9.9a1 1 0 0 1-.7.3H7a3 3 0 0 0-3 3v1.2c0 .3 0 .5-.2.7l-1 .9a3 3 0 0 0 0 4.2l1 .9c.2.2.3.4.3.7V17a3 3 0 0 0 3 3h1.2c.3 0 .5 0 .7.2l.9 1a3 3 0 0 0 4.2 0l.9-1c.2-.2.4-.3.7-.3H17a3 3 0 0 0 3-3v-1.2c0-.3 0-.5.2-.7l1-.9a3 3 0 0 0 0-4.2l-1-.9a1 1 0 0 1-.3-.7V7a3 3 0 0 0-3-3h-1.2a1 1 0 0 1-.7-.2l-.9-1A3 3 0 0 0 12 2Zm3.7 7.7a1 1 0 1 0-1.4-1.4L10 12.6l-1.3-1.3a1 1 0 0 0-1.4 1.4l2 2c.4.4 1 .4 1.4 0l5-5Z"
-										clip-rule="evenodd"
-									/>
-								</svg>
+                <span
+                  >Berpengalaman lama dibidang konveksi kaos didukung Tenaga dan
+                  SDM yang handal.</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center space-x-3 px-4 py-2 text-center rtl:space-x-reverse"
+              >
+                <svg
+                  class="w-10 h-10 mb-2 text-green-500 dark:text-pink-600"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2a3 3 0 0 0-2.1.9l-.9.9a1 1 0 0 1-.7.3H7a3 3 0 0 0-3 3v1.2c0 .3 0 .5-.2.7l-1 .9a3 3 0 0 0 0 4.2l1 .9c.2.2.3.4.3.7V17a3 3 0 0 0 3 3h1.2c.3 0 .5 0 .7.2l.9 1a3 3 0 0 0 4.2 0l.9-1c.2-.2.4-.3.7-.3H17a3 3 0 0 0 3-3v-1.2c0-.3 0-.5.2-.7l1-.9a3 3 0 0 0 0-4.2l-1-.9a1 1 0 0 1-.3-.7V7a3 3 0 0 0-3-3h-1.2a1 1 0 0 1-.7-.2l-.9-1A3 3 0 0 0 12 2Zm3.7 7.7a1 1 0 1 0-1.4-1.4L10 12.6l-1.3-1.3a1 1 0 0 0-1.4 1.4l2 2c.4.4 1 .4 1.4 0l5-5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
 
-								<span>Harga yang kompetitif. </span>
-							</li>
-						</ul>
+                <span>Harga yang kompetitif. </span>
+              </li>
+            </ul>
 
-						<div
-							class="flex items-center justify-center my-6 rounded bg-gray-50 dark:bg-gray-800"
-						>
-							<img
-								class="rounded-md"
-								src="./public/images/banner-toko.webp"
-								alt="Banner CV Focus Alfasarana"
-							/>
-						</div>
-						<div
-							class="flex flex-col space-y-2 sm:grid grid-cols-2 gap-4 mb-4"
-						>
-							<div
-								class="flex items-center justify-center rounded aspect-video bg-gray-50 dark:bg-gray-800"
-							>
-								<img
-									class="rounded-md"
-									src="./public/images/front-office.webp"
-									alt="Banner CV Focus Alfasarana"
-								/>
-							</div>
-							<div
-								class="flex items-center justify-center rounded aspect-video bg-gray-50 dark:bg-gray-800"
-							>
-								<img
-									class="rounded-md"
-									src="./public/images/sewing-div.webp"
-									alt="Banner CV Focus Alfasarana"
-								/>
-							</div>
-							<div
-								class="flex items-center justify-center rounded aspect-video bg-gray-50 dark:bg-gray-800"
-							>
-								<img
-									class="rounded-md"
-									src="./public/images/activity-1.webp"
-									alt="Banner CV Focus Alfasarana"
-								/>
-							</div>
-							<div
-								class="flex items-center justify-center rounded aspect-video bg-gray-50 dark:bg-gray-800"
-							>
-								<img
-									class="rounded-md"
-									src="./public/images/activity-1.webp"
-									alt="Banner CV Focus Alfasarana"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+            <div
+              class="flex items-center justify-center my-6 rounded bg-gray-50 dark:bg-gray-800"
+            >
+              <img
+                class="rounded-md"
+                src="./public/images/banner-toko.webp"
+                alt="Banner CV Focus Alfasarana"
+              />
+            </div>
+            <div class="flex flex-col space-y-2 sm:grid grid-cols-2 gap-4 mb-4">
+              <div
+                class="flex items-center justify-center rounded aspect-video bg-gray-50 dark:bg-gray-800"
+              >
+                <img
+                  class="rounded-md"
+                  src="./public/images/front-office.webp"
+                  alt="Banner CV Focus Alfasarana"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center rounded aspect-video bg-gray-50 dark:bg-gray-800"
+              >
+                <img
+                  class="rounded-md"
+                  src="./public/images/sewing-div.webp"
+                  alt="Banner CV Focus Alfasarana"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center rounded aspect-video bg-gray-50 dark:bg-gray-800"
+              >
+                <img
+                  class="rounded-md"
+                  src="./public/images/activity-1.webp"
+                  alt="Banner CV Focus Alfasarana"
+                />
+              </div>
+              <div
+                class="flex items-center justify-center rounded aspect-video bg-gray-50 dark:bg-gray-800"
+              >
+                <img
+                  class="rounded-md"
+                  src="./public/images/activity-1.webp"
+                  alt="Banner CV Focus Alfasarana"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- Contact Us -->
-			<section id="contact-us" class="pt-20 dark:bg-gray-900">
-				<div
-					class="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-4"
-				>
-					<p
-						class="mb-2 text-base font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400 uppercase"
-					>
-						Hubungi kami langsung ke
-					</p>
-					<h2
-						class="mb-2 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-white uppercase"
-					>
-						Kantor Kami
-					</h2>
+      <!-- Contact Us -->
+      <section id="contact-us" class="pt-20 dark:bg-gray-900">
+        <div class="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-4">
+          <p
+            class="mb-2 text-base font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400 uppercase"
+          >
+            Hubungi kami langsung ke
+          </p>
+          <h2
+            class="mb-2 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-5xl dark:text-white uppercase"
+          >
+            Kantor Kami
+          </h2>
 
-					<div
-						class="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-8"
-					>
-						<ul
-							class="mb-6 md:mb-0 flex flex-col gap-8 justify-evenly"
-						>
-							<li
-								class="flex flex-col items-center justify-center"
-							>
-								<div
-									class="flex h-10 w-10 items-center justify-center rounded bg-pink-900 dark:bg-pink-600 text-gray-50"
-								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="24"
-										height="24"
-										viewBox="0 0 24 24"
-										fill="none"
-										stroke="currentColor"
-										stroke-width="2"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										class="h-6 w-6"
-									>
-										<path
-											d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"
-										></path>
-										<path
-											d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-										></path>
-									</svg>
-								</div>
-								<div>
-									<h3
-										class="py-3 mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white"
-									>
-										Alamat Kami
-									</h3>
-									<p
-										class="text-gray-600 text-base dark:text-slate-400"
-									>
-										Medokan Asri Timur RL V/i-16
-									</p>
-									<p
-										class="text-gray-600 text-base dark:text-slate-400"
-									>
-										Rungkut, Surabaya
-									</p>
-								</div>
-							</li>
-							<li
-								class="flex flex-col items-center justify-center"
-							>
-								<div
-									class="flex h-10 w-10 items-center justify-center rounded bg-pink-900 dark:bg-pink-600 text-gray-50"
-								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="24"
-										height="24"
-										viewBox="0 0 24 24"
-										fill="none"
-										stroke="currentColor"
-										stroke-width="2"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										class="h-6 w-6"
-									>
-										<path
-											d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
-										></path>
-										<path d="M15 7a2 2 0 0 1 2 2"></path>
-										<path d="M15 3a6 6 0 0 1 6 6"></path>
-									</svg>
-								</div>
-								<div>
-									<h3
-										class="py-3 mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white"
-									>
-										Kontak
-									</h3>
-									<p
-										class="text-gray-600 text-base dark:text-slate-400"
-									>
-										Mobile: +62 811 333 6618
-									</p>
-									<p
-										class="text-gray-600 text-base dark:text-slate-400"
-									>
-										Office: 031-8786 2547
-									</p>
-								</div>
-							</li>
-							<li
-								class="flex flex-col items-center justify-center"
-							>
-								<div
-									class="flex h-10 w-10 items-center justify-center rounded bg-pink-900 dark:bg-pink-600 text-gray-50"
-								>
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="24"
-										height="24"
-										viewBox="0 0 24 24"
-										fill="none"
-										stroke="currentColor"
-										stroke-width="2"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										class="h-6 w-6"
-									>
-										<path
-											d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"
-										></path>
-										<path d="M12 7v5l3 3"></path>
-									</svg>
-								</div>
-								<div>
-									<h3
-										class="py-3 mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white"
-									>
-										Jam Kerja
-									</h3>
-									<p
-										class="text-gray-600 text-base dark:text-slate-400"
-									>
-										Senin - Jumat: 08:00 - 21:00
-									</p>
-									<p
-										class="text-gray-600 text-base dark:text-slate-400"
-									>
-										Sabtu: 08:00 - 15:00
-									</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-		</main>
+          <div class="py-4 px-4 mx-auto max-w-screen-xl text-center lg:py-8">
+            <ul class="mb-6 md:mb-0 flex flex-col gap-8 justify-evenly">
+              <li class="flex flex-col items-center justify-center">
+                <div
+                  class="flex h-10 w-10 items-center justify-center rounded bg-pink-900 dark:bg-pink-600 text-gray-50"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6"
+                  >
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                    <path
+                      d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3
+                    class="py-3 mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white"
+                  >
+                    Alamat Kami
+                  </h3>
+                  <p class="text-gray-600 text-base dark:text-slate-400">
+                    Medokan Asri Timur RL V/i-16
+                  </p>
+                  <p class="text-gray-600 text-base dark:text-slate-400">
+                    Rungkut, Surabaya
+                  </p>
+                </div>
+              </li>
+              <li class="flex flex-col items-center justify-center">
+                <div
+                  class="flex h-10 w-10 items-center justify-center rounded bg-pink-900 dark:bg-pink-600 text-gray-50"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                    ></path>
+                    <path d="M15 7a2 2 0 0 1 2 2"></path>
+                    <path d="M15 3a6 6 0 0 1 6 6"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3
+                    class="py-3 mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white"
+                  >
+                    Kontak
+                  </h3>
+                  <p class="text-gray-600 text-base dark:text-slate-400">
+                    Mobile: +62 811 333 6618
+                  </p>
+                  <p class="text-gray-600 text-base dark:text-slate-400">
+                    Office: 031-8786 2547
+                  </p>
+                </div>
+              </li>
+              <li class="flex flex-col items-center justify-center">
+                <div
+                  class="flex h-10 w-10 items-center justify-center rounded bg-pink-900 dark:bg-pink-600 text-gray-50"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6"
+                  >
+                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                    <path d="M12 7v5l3 3"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3
+                    class="py-3 mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white"
+                  >
+                    Jam Kerja
+                  </h3>
+                  <p class="text-gray-600 text-base dark:text-slate-400">
+                    Senin - Jumat: 08:00 - 21:00
+                  </p>
+                  <p class="text-gray-600 text-base dark:text-slate-400">
+                    Sabtu: 08:00 - 15:00
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
-		<!-- Footer -->
+    <!-- Footer -->
 
-		<footer
-			class="bg-pink-100 rounded-lg shadow dark:bg-pink-600 dark:text-gray-900 m-4"
-		>
-			<div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-				<div class="sm:flex sm:items-center sm:justify-between">
-					<a
-						href="../index.html"
-						class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-					>
-						<img
-							src="./public/images/website-logo-kaos.webp"
-							class="h-8 me-1"
-							alt="FlowBite Logo"
-						/>
-						<img
-							src="./public/images/website-logo-tas.webp"
-							class="h-8 me-1"
-							alt="FlowBite Logo"
-						/>
-						<span
-							class="self-center text-2xl font-semibold whitespace-nowrap"
-							>Alfasarana</span
-						>
-					</a>
-					<ul
-						class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 dark:text-inherit sm:mb-0 dark:text-gray-400"
-					>
-						<li>
-							<a
-								href="#product-us"
-								class="hover:underline me-4 md:me-6"
-								>Produk Kami</a
-							>
-						</li>
-						<li>
-							<a
-								href="#about-us"
-								class="hover:underline me-4 md:me-6"
-								>Tentang Kami</a
-							>
-						</li>
-						<li>
-							<a href="#contact-us" class="hover:underline"
-								>Kontak</a
-							>
-						</li>
-					</ul>
-				</div>
-				<hr
-					class="my-6 border-gray-200 sm:mx-auto dark:border-gray-900 lg:my-8"
-				/>
-				<span
-					class="block text-sm text-gray-500 sm:text-center dark:text-inherit"
-					>© 2023
-					<a href="../index.html" class="hover:underline"
-						>Alfasarana™</a
-					>. All Rights Reserved.</span
-				>
-				<div class="sm:flex sm:items-center sm:justify-between">
-					<div class="flex mt-4 sm:justify-center sm:mt-0">
-						<a
-							href="https://www.instagram.com/goodiebag_sby?igsh=ODZxcmtrMnk1NTdk"
-							class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="16"
-								height="16"
-								fill="currentColor"
-								class="bi bi-instagram"
-								viewBox="0 0 16 16"
-							>
-								<path
-									d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-								/>
-							</svg>
-							<span class="sr-only">Instagram</span>
-						</a>
-						<a
-							href="https://www.tiktok.com/@spunbondsurabayabag?_t=8k7HSrAWN0h&_r=1"
-							class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="16"
-								height="16"
-								fill="currentColor"
-								class="bi bi-tiktok"
-								viewBox="0 0 16 16"
-							>
-								<path
-									d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
-								/>
-							</svg>
-							<span class="sr-only">Tiktok</span>
-						</a>
-						<!-- <a
-              href="#"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+    <footer
+      class="bg-pink-100 rounded-lg shadow dark:bg-pink-600 dark:text-gray-900 m-4"
+    >
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="../index.html"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="./public/images/website-logo-kaos.webp"
+              class="h-8 me-1"
+              alt="FlowBite Logo"
+            />
+            <img
+              src="./public/images/website-logo-tas.webp"
+              class="h-8 me-1"
+              alt="FlowBite Logo"
+            />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap"
+              >Alfasarana</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 dark:text-inherit sm:mb-0 dark:text-gray-400"
+          >
+            <li>
+              <a href="#product-us" class="hover:underline me-4 md:me-6"
+                >Produk Kami</a
+              >
+            </li>
+            <li>
+              <a href="#about-us" class="hover:underline me-4 md:me-6"
+                >Tentang Kami</a
+              >
+            </li>
+            <li>
+              <a href="#contact-us" class="hover:underline">Kontak</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-900 lg:my-8"
+        />
+        <span
+          class="block text-sm text-gray-500 sm:text-center dark:text-inherit"
+          >© 2023
+          <a href="../index.html" class="hover:underline">Alfasarana™</a>. All
+          Rights Reserved.</span
+        >
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+            <a
+              href="https://www.instagram.com/goodiebag_sby?igsh=ODZxcmtrMnk1NTdk"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
-                class="w-4 h-4"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
                 fill="currentColor"
-                viewBox="0 0 20 17"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                  clip-rule="evenodd"
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
                 />
               </svg>
-              <span class="sr-only">Twitter page</span>
-            </a> -->
-						<a
-							href="https://youtube.com/@focustasspunbond19?si=wLm_O16yPF2At5HN"
-							class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="16"
-								height="16"
-								fill="currentColor"
-								class="bi bi-youtube"
-								viewBox="0 0 16 16"
-							>
-								<path
-									d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
-								/>
-							</svg>
-
-							<span class="sr-only">Youtube</span>
-						</a>
-						<!-- <a
-              href="#"
+              <span class="sr-only">Instagram</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@spunbondsurabayabag?_t=8k7HSrAWN0h&_r=1"
               class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <svg
-                class="w-4 h-4"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-tiktok"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+                />
+              </svg>
+              <span class="sr-only">Tiktok</span>
+            </a>
+            <a
+              href="https://youtube.com/@focustasspunbond19?si=wLm_O16yPF2At5HN"
+              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-youtube"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                />
+              </svg>
+
+              <span class="sr-only">Youtube</span>
+            </a>
+            <span
+              class="bg-pink-300 text-gray-800 text-xs font-medium inline-flex items-center ms-5 px-2.5 py-0.5 rounded me-2 dark:bg-gray-700 dark:text-gray-400"
+            >
+              <svg
+                class="w-2.5 h-2.5 me-1.5"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -894,15 +837,16 @@
               >
                 <path
                   fill-rule="evenodd"
-                  d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                  d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4H6Zm7.3-2a6 6 0 0 0 0-6A4 4 0 0 1 20 8a4 4 0 0 1-6.7 3Zm2.2 9a4 4 0 0 0 .5-2v-1a6 6 0 0 0-1.5-4H18a4 4 0 0 1 4 4v1a2 2 0 0 1-2 2h-4.5Z"
                   clip-rule="evenodd"
                 />
               </svg>
-              <span class="sr-only">Dribbble account</span>
-            </a> -->
-					</div>
-				</div>
-			</div>
-		</footer>
-	</body>
+
+              0 people visited us!
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'fs';
+// import { readFileSync, writeFileSync } from 'fs';
 
 // read visitor
 // let visitor = fs.readFileSync('./src/num-of-visitor.json');
@@ -11,32 +11,34 @@ import { readFileSync, writeFileSync } from 'fs';
 // Path to your JSON file
 // const filePath = 'https://github.com/Focus-Alfasarana/gallery-app/blob/master/src/num-of-visitor.json';
 
-const filePath = './src/num-of-visitor.json';
+const filePath = "./src/num-of-visitor.json";
 
-// Function to read, modify, and write JSON data
-function updateJson(key, incrementValue) {
-  try {
-    // Read the JSON file content
-    const jsonData = JSON.parse(readFileSync(filePath, 'utf-8'));
+const jsonData = JSON.parse(filePath);
 
-    // Check if the key exists
-    if (jsonData.hasOwnProperty(key)) {
-      jsonData[key] += incrementValue; // Increment the value
-    } else {
-      jsonData[key] = incrementValue; // Create the key with initial value
-    }
+// // Function to read, modify, and write JSON data
+// function updateJson(key, incrementValue) {
+//   try {
+//     // Read the JSON file content
+//     const jsonData = JSON.parse(readFileSync(filePath, 'utf-8'));
 
-    // Stringify the updated data
-    const updatedJsonString = JSON.stringify(jsonData, null, 2);
+//     // Check if the key exists
+//     if (jsonData.hasOwnProperty(key)) {
+//       jsonData[key] += incrementValue; // Increment the value
+//     } else {
+//       jsonData[key] = incrementValue; // Create the key with initial value
+//     }
 
-    // Write the updated JSON data to the file
-    writeFileSync(filePath, updatedJsonString);
+//     // Stringify the updated data
+//     const updatedJsonString = JSON.stringify(jsonData, null, 2);
 
-    console.log(`Value for key '${key}' incremented by ${incrementValue}`);
-  } catch (error) {
-    console.error(error.message);
-  }
-}
+//     // Write the updated JSON data to the file
+//     writeFileSync(filePath, updatedJsonString);
 
-// Example usage: Increment a value named "count" by 1
-updateJson('count', 1);
+//     console.log(`Value for key '${key}' incremented by ${incrementValue}`);
+//   } catch (error) {
+//     console.error(error.message);
+//   }
+// }
+
+// // Example usage: Increment a value named "count" by 1
+// updateJson('count', 1);

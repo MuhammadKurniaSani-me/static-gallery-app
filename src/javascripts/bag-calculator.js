@@ -141,9 +141,7 @@ const previousOperandTextElement = document.querySelector(
  *
  *
  */
-function sumVolume(length = 15, width = 15, height = 15) {
-    return length + width + height;
-}
+
 
 function minBagPrice() {
     return 3500;
@@ -169,6 +167,10 @@ function add100gsmFabric(volume) {
     return 2000;
 }
 
+function sumVolume(length = 15, width = 15, height = 15) {
+    return length + width + height;
+}
+
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -182,33 +184,18 @@ function calcVolumeBagPrice(volume) {
     return getRndInteger(700, 900) + (priceReference - deltaVolume * 100);
 }
 
-/**
- *
- *
- *
- */
 function calcSideBag(numOfSide = 1) {
     const PriceAdditionalSide = 500;
 
     return (numOfSide - 1) * PriceAdditionalSide;
 }
 
-/**
- *
- *
- *
- */
 function calcColorBag(numOfColor = 1) {
     const PriceAdditionalSide = 500;
 
     return (numOfColor - 1) * PriceAdditionalSide;
 }
 
-/**
- *
- *
- *
- */
 function calcPriceSideAndColorBag(numOfSide = 1, numOfColor = 1) {
     if (numOfSide === 1 && numOfColor === 1) {
         return "Gratis tanpa biaya tambahan";
